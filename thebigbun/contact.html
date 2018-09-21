@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
     <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Shadows+Into+Light" rel="stylesheet">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
+    <style>
+        form {
+            font-weight: bold;
+        }
+
+        
+    </style>
 </head>
 
 <body>
     <header>The Big Bun</header>
-    <hr />
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -14,31 +22,31 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <hr />
-    <form>
-        Name: <input type="text" name="customer_name"> <br />
-        Email: <input type="text" name="customer_email"> <br />
-        Phone: <input type="tel" name="customer_telepone"> <br />
-        Reason for Inquiry: 
-            <select name="reasons">
-                <option value="catering" selected>Catering</option>
-                <option value="private_party">Private Party</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-            </select> <br />
-        Additional Information: <textarea name="additional_information"></textarea> <br />
-        Have you been to the restaurant?
-        <input type="radio" name="answer" value="NO" checked>No
-        <input type="radio" name="answer" value="YES" >Yes<br />
-        Best days to contact you: 
-        <input type="checkbox" name="days" value="MONDAY"/>M 
-        <input type="checkbox" name="days" value="TUESDAY"/>T
-        <input type="checkbox" name="days" value="WEDNESDAY"/>W
-        <input type="checkbox" name="days" value="THURSDAY"/>Th
-        <input type="checkbox" name="days" value="FRIDAY"/>F <br />
-        <input type="submit" value="Send Request"/>
-    </form>
-    <hr />
+    <div id="form-container">
+        <form>
+            Name: <input type="text" name="customer_name"> <br />
+            Email: <input type="text" name="customer_email"> <br />
+            Phone: <input type="tel" name="customer_telepone"> <br />
+            Reason for Inquiry: 
+                <select name="reasons">
+                    <option value="catering" selected>Catering</option>
+                    <option value="private_party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select> <br />
+            Additional Information: <textarea name="additional_information"></textarea> <br />
+            Have you been to the restaurant?
+            <input type="radio" name="answer" value="NO" checked>No
+            <input type="radio" name="answer" value="YES" >Yes<br />
+            Best days to contact you: 
+            <input type="checkbox" name="days" value="MONDAY"/>M 
+            <input type="checkbox" name="days" value="TUESDAY"/>T
+            <input type="checkbox" name="days" value="WEDNESDAY"/>W
+            <input type="checkbox" name="days" value="THURSDAY"/>Th
+            <input type="checkbox" name="days" value="FRIDAY"/>F <br />
+            <input type="submit" value="Send Request"/>
+        </form>
+    </div>    
     <footer>
         <p>123 Main St., Dallas, TX, 75052</p>
         <p><a href="tel:555-555-5555" >555-555-5555</a></p>

@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
     <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Shadows+Into+Light" rel="stylesheet">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
+    <style>
+        #homepage-content {
+            background-color: #6F6B82;
+            display: inline-block;
+            color: white;            
+        }
+        .articles {
+            max-width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+    </style>
 </head>
 
 <body>
     <header>The Big Bun</header>
-    <hr />
+    
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -14,17 +29,17 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <hr />
-    <figure>
-        <img src="/images/storefront.jpg" alt="Photo of the store front." />
-    </figure>
-    <section>
-        <h1> Welcome!</h1>
-        <article>
-            <b>The Big Bun</b> was founded on one simple goal: to make the <i>juiciest, tastiest, most flavorful burger</i> in town! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </article>
-    </section>
-    <hr />
+    <div id="homepage-content">
+        <figure>
+            <img  src="/images/storefront.jpg" style="margin-left: auto; margin-right: auto; display: block; " alt="Photo of the store front." />
+        </figure>
+        <section class="articles">
+            <h1> Welcome!</h1>
+            <article>
+                <b>The Big Bun</b> was founded on one simple goal: to make the <i>juiciest, tastiest, most flavorful burger</i> in town! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Molestie a iaculis at erat pellentesque adipiscing commodo elit. Ac tortor dignissim convallis aenean et tortor at. Justo nec ultrices dui sapien eget. Sem fringilla ut morbi tincidunt augue. Consequat interdum varius sit amet mattis vulputate. Nibh sed pulvinar proin gravida hendrerit lectus. Ante in nibh mauris cursus mattis molestie a. Tortor consequat id porta nibh venenatis cras sed. Ac tortor dignissim convallis aenean et tortor at risus viverra. Nunc consequat interdum varius sit amet mattis vulputate enim. Id diam vel quam elementum. Ornare massa eget egestas purus viverra accumsan in nisl. Malesuada fames ac turpis egestas integer. Purus semper eget duis at tellus at. Eget velit aliquet sagittis id. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra.
+            </article>
+        </section>
+    </div>
     <footer>
         <p>123 Main St., Dallas, TX, 75052</p>
         <p><a href="tel:555-555-5555" >555-555-5555</a></p>

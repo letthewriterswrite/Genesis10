@@ -2,11 +2,51 @@
 <html lang="en">
 <head>
     <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Shadows+Into+Light" rel="stylesheet">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
+    <style>
+        #menu {
+            background-color: #E36A38;
+            color: white;
+            list-style-type: none;
+            display: inline-block;
+            width: 100%;
+            border-bottom: 2px solid #1A171B;
+        }
+        
+        #menu ul {
+            list-style-type: none;
+        }
+        
+        .menuItemName {
+            font-size: 1.25em;
+            font-weight: bold;
+        }
+        table {
+            margin-right: auto;
+            margin-left: auto;
+            width: 50%; 
+
+        }
+        table, th, td {
+            border-collapse: collapse;
+            text-align: left;
+            padding: 1% 0 1% 2%;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: white;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #6F6B82;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <header>The Big Bun</header>
-    <hr />
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -14,12 +54,11 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <hr />
-    <section>
+    <section id="menu">
         <ul>
             <li>
                 <p>
-                    <b>The Big Bun</b> <br/>
+                    <span class="menuItemName">The Big Bun</span> <br/>
                     A true classic!<br/>
                     Cheese,Pickles, and Tomatoes<br/>
                     Served with french fries <br />
@@ -28,7 +67,7 @@
             </li>
             <li>
                 <p>
-                    <b>The Big Ol' Bun</b> <br/>
+                    <span class="menuItemName">The Big Ol' Bun</span> <br/>
                     For a bigger appetite!<br/>
                     Double Meat <br />
                     Cheese,Pickles, and Tomatoes<br/>
@@ -38,7 +77,7 @@
             </li>
             <li>
                 <p>
-                    <b>The Big Chick</b> <br/>
+                    <span class="menuItemName">The Big Chick</span> <br/>
                     Juicy fried chicken sandwich!<br/>
                     Cheese,Pickles, and Tomatoes<br/>
                     Served with french fries <br />
@@ -47,7 +86,7 @@
             </li>
             <li>
                 <p>
-                    <b>The Big Bean</b> <br/>
+                    <span class="menuItemName">The Big Bean</span> <br/>
                     A delicious vegan burger!<br/>
                     Soy Cheese,Pickles, and Tomatoes<br/>
                     Served with french fries <br />
@@ -56,7 +95,7 @@
             </li>
             <li>
                 <p>
-                    <b>The Big Western</b> <br/>
+                    <span class="menuItemName">The Big Western</span> <br/>
                     A smoky delicious brisket sandwich!<br/>
                     Served with french fries <br />
                     $12.50 <br />
@@ -64,7 +103,7 @@
             </li>
             <li>
                 <p>
-                    <b>The Big Piggie</b> <br/>
+                    <span class="menuItemName">The Big Piggie</span> <br/>
                     Succulant pulled pork sandwich!<br/>
                     Cheese and pickles<br/>
                     Served with french fries <br />
@@ -73,7 +112,27 @@
             </li>
         </ul>
     </section>
-    <hr />
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Beverages</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Root Beer</td><td>$3.00</td>
+            </tr>
+            <tr>
+                <td>Bottled Water</td><td>$1.25</td>
+            </tr>
+            <tr>
+                <td>Lemonade</td><td>$1.00</td>
+            </tr>
+            <tr>
+                <td>Iced Tea</td><td>$1.25</td>
+            </tr>
+        </tbody>
+    </table>
     <footer>
         <p>123 Main St., Dallas, TX, 75052</p>
         <p><a href="tel:555-555-5555" >555-555-5555</a></p>
