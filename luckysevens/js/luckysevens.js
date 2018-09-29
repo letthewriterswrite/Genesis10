@@ -4,7 +4,7 @@ function runGame()
     var dollars = document.forms["luckySevens"]["dollars"].value;
     
     //Validate input
-   if(dollars == "" || isNaN(dollars)){
+   if(dollars == 0 || isNaN(dollars)){
        alert("Must enter a dollar amount.");
        
        document.forms["luckySevens"]["dollars"].focus();
@@ -40,7 +40,7 @@ function playGame(dollars) {
     var maxMoney = dollars;
     var maxRolls = totalRolls;
 //Play game until hitting zero
-    for (var dice1,dice2,i=1;dollars > 0;i++)
+    for (var dice1,dice2,i=1;dollars > 0;i++,totalRolls++)
         {
             dice1 = rollDice();
             dice2 = rollDice();
@@ -61,10 +61,12 @@ function playGame(dollars) {
                     maxMoney = dollars;
                     maxRolls = totalRolls;
                 }
-            totalRolls++;
+            
             //Log dollars left
             console.log(dollars);
         }
+    //Subtract one to get actual number of rolls
+    totalRolls--;
     //Call function to display results
     displayResults(startingBet,totalRolls,maxMoney,maxRolls);
 }
