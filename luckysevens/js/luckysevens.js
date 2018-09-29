@@ -7,9 +7,14 @@ function runGame()
    if(dollars == 0 || isNaN(dollars)){
        alert("Must enter a dollar amount.");
        
+       document.forms["luckySevens"]["dollars"].parentElement.classList.add("text-danger");
+       document.forms["luckySevens"]["dollars"].classList.add("is-invalid");
        document.forms["luckySevens"]["dollars"].focus();
          
        return false;
+   }else {
+       document.forms["luckySevens"]["dollars"].parentElement.classList.remove("text-danger");
+       document.forms["luckySevens"]["dollars"].classList.remove("is-invalid");
    }
     
     //Start game
