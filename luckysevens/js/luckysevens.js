@@ -92,6 +92,8 @@ function displayResults (startingBet,totalRolls,maxMoney,maxRolls)
     console.log("max rolls " + maxRolls);
     document.getElementById("maxRolls").innerHTML = maxRolls;
     
+    
+    
 
     
 }
