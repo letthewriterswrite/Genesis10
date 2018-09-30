@@ -5,7 +5,7 @@ function runGame()
     
     //Validate input
    if(dollars <= 0 || isNaN(dollars)){
-       alert("Must enter a dollar amount.");
+       alert("Must enter a positive dollar amount.");
        
        document.forms["luckySevens"]["dollars"].parentElement.classList.add("text-danger");
        document.forms["luckySevens"]["dollars"].classList.add("is-invalid");
